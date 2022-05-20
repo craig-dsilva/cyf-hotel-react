@@ -8,7 +8,7 @@ const Bookings = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch("https://cyf-react.glitch.me")
+    fetch("https://cyf-craig-dsilva-hotel-node.glitch.me/bookings")
       .then(res => {
         // If the response status is 500 and throws an error
         if (res.status === 500) {

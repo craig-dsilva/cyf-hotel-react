@@ -5,7 +5,9 @@ const CustomerProfile = props => {
 
   useEffect(() => {
     props.id && // A condition so that the fetch runs only when the props.id has a value
-      fetch(`https://cyf-react.glitch.me/customers/${props.id}`)
+      fetch(
+        `https://cyf-craig-dsilva-hotel-node.glitch.me/bookings/${props.id}`
+      )
         .then(res => res.json())
         .then(data => setCustomerData(data));
   }, [props.id]);
@@ -14,7 +16,7 @@ const CustomerProfile = props => {
     <div className="customer-profile">
       <p>ID: {customerData.id}</p>
       <p>Email: {customerData.email}</p>
-      <p>VIP: {customerData.vip ? "Yes" : "No"}</p>
+      <p>Room No: {customerData.roomId}</p>
     </div>
   ) : null;
 };
