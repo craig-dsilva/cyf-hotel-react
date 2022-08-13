@@ -7,4 +7,5 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin-top: 2.5em;
+  padding: 0;
 }

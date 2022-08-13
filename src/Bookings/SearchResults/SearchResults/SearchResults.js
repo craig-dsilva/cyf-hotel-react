@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import TableCell from "./TableCell";
-import CustomerProfile from "./CustomerProfile";
+import TableCell from "../TableCell";
+import CustomerProfile from "../CustomerProfile";
 
 const SearchResults = props => {
   const [customerId, setCustomerId] = useState();
@@ -11,7 +11,7 @@ const SearchResults = props => {
   };
 
   return (
-    <div className="search-results">
+    <div className="table-responsive">
       <table className="table table-hover">
         <thead>
           <tr>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Search from "./Search.js";
-import SearchResults from "./SearchResults/SearchResults";
+import Search from "./Search/Search";
+import SearchResults from "./SearchResults/SearchResults/SearchResults";
+
+import "./Bookings.css";
 
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
@@ -35,7 +37,7 @@ const Bookings = () => {
   };
 
   return (
-    <div className="App-content">
+    <div className="bookings">
       <div className="container">
         <Search search={search} />
         {!loading ? (
